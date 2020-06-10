@@ -20,12 +20,12 @@
 							}
 						],
 						"url": {
-							"raw": "https://{{apiId}}.execute-api.us-west-1.amazonaws.com/dev/todos",
+							"raw": "https://{{apiId}}.execute-api.ap-south-1.amazonaws.com/dev/todos",
 							"protocol": "https",
 							"host": [
 								"{{apiId}}",
 								"execute-api",
-								"us-west-1",
+								"ap-south-1",
 								"amazonaws",
 								"com"
 							],
@@ -59,12 +59,12 @@
 							"raw": "{\n  \"createdAt\": \"2019-07-27T20:01:45.424Z\",\n  \"name\": \"Buy milk 3\",\n  \"dueDate\": \"2019-07-29T20:01:45.424Z\",\n  \"done\": false,\n  \"attachmentUrl\": \"http://example.com/image.png\"\n}"
 						},
 						"url": {
-							"raw": "https://{{apiId}}.execute-api.us-west-1.amazonaws.com/dev/todos",
+							"raw": "https://{{apiId}}.execute-api.ap-south-1.amazonaws.com/dev/todos",
 							"protocol": "https",
 							"host": [
 								"{{apiId}}",
 								"execute-api",
-								"us-west-1",
+								"ap-south-1",
 								"amazonaws",
 								"com"
 							],
@@ -98,12 +98,12 @@
 							"raw": "{\n\t\"name\": \"Change the world\",\n\t\"dueDate\": \"2019-12-11\",\n\t\"done\": true\n}"
 						},
 						"url": {
-							"raw": "https://{{apiId}}.execute-api.us-west-1.amazonaws.com/dev/todos/7a01cdbd-374f-4ca5-9846-baea342965f3",
+							"raw": "https://{{apiId}}.execute-api.ap-south-1.amazonaws.com/dev/todos/7a01cdbd-374f-4ca5-9846-baea342965f3",
 							"protocol": "https",
 							"host": [
 								"{{apiId}}",
 								"execute-api",
-								"us-west-1",
+								"ap-south-1",
 								"amazonaws",
 								"com"
 							],
@@ -138,12 +138,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://{{apiId}}.execute-api.us-west-1.amazonaws.com/dev/todos/7a212070-3410-4d5e-a354-2a97fcaabf30",
+							"raw": "https://{{apiId}}.execute-api.ap-south-1.amazonaws.com/dev/todos/7a212070-3410-4d5e-a354-2a97fcaabf30",
 							"protocol": "https",
 							"host": [
 								"{{apiId}}",
 								"execute-api",
-								"us-west-1",
+								"ap-south-1",
 								"amazonaws",
 								"com"
 							],
@@ -172,12 +172,12 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://{{apiId}}.execute-api.us-west-1.amazonaws.com/dev/todos/db3e7a90-720e-468e-8960-880e7b407258/attachment",
+							"raw": "https://{{apiId}}.execute-api.ap-south-1.amazonaws.com/dev/todos/db3e7a90-720e-468e-8960-880e7b407258/attachment",
 							"protocol": "https",
 							"host": [
 								"{{apiId}}",
 								"execute-api",
-								"us-west-1",
+								"ap-south-1",
 								"amazonaws",
 								"com"
 							],
