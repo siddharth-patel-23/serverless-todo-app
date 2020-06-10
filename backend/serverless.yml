@@ -1,21 +1,34 @@
 service:
-  name: ross-serverless-todo-app
+  name: sidz-serverless-todo-app
 
 plugins:
   - serverless-webpack
   - serverless-iam-roles-per-function
+  - serverless-plugin-tracing
 
 provider:
   name: aws
   runtime: nodejs10.x
 
   stage: ${opt:stage, 'dev'}
-  region: ${opt:region, 'us-west-1'}
+  region: ${opt:region, 'ap-south-1'}
+
+  # enable AWS X-Ray Tracing
+  tracing:
+    lambda: true
+    apiGateway: true
+    iamRoleStatements:
+      - Effect: 'Allow' # xray permissions (required)
+        Action:
+          - 'xray:PutTraceSegments'
+          - 'xray:PutTelemetryRecords'
+        Resource:
+          - '*'
 
   environment:
     TODOS_TABLE: Todos-${self:provider.stage}
-    AUTH_0_SECRET: z2JvJFPCw4F2SljDrRt2tQQIy9e3MArsWEYFv2MVpyTjO4b5DVjXhHqfewYvvjvg
-    S3_BUCKET: ross-serverless-todo-s3-${self:provider.stage}
+    AUTH_0_SECRET: 7RY8PMDO_yfYdH5HHbAKZJNF9ZzFAixwjDf1BbJaNl140wT-22KHuOOwUxCQsTfS
+    S3_BUCKET: sidz-serverless-todo-s3-${self:provider.stage}
     SIGNED_URL_EXPIRATION: 300
 
 functions:
